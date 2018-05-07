@@ -19,6 +19,7 @@ export class CalendarPage {
 
     var card2 = new Oficina();
     card2.Periodo = "1º Horário";
+    card2.Disciplina = "Excel I"
     card2.Turma = "Tec. Proc. Ger. 2A/4A";
     card2.Sala = "726";
     card2.Lab = "205";
@@ -26,6 +27,7 @@ export class CalendarPage {
 
     var card3 = new Oficina();
     card3.Periodo = "2º Horário";
+    card2.Disciplina = "MS Project"
     card3.Turma = "Tec. Jogos Digitais 01/05A";
     card3.Sala = "817";
     card3.Lab = "203";
