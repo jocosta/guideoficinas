@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 
 import { CalendarPage } from '../calendar/calendar';
 import { SchedulePage } from '../schedule/schedule';
+import { ProfilePage } from '../profile/profile';
 
 @Component({
   selector: 'page-home',
@@ -10,12 +11,12 @@ import { SchedulePage } from '../schedule/schedule';
 })
 export class HomePage {
 
-  public profileTab: any;
+  public homeTab: any;
   public scheduleTab: any;
-  
-  constructor(public navCtrl: NavController) {
-    this.profileTab = CalendarPage;
-    this.scheduleTab = SchedulePage;
-  }
+  public profileTab: any;
 
+  constructor(public navCtrl: NavController) {
+    this.homeTab = CalendarPage;
+    this.profileTab = ProfilePage;
+  }
 }

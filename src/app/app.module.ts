@@ -11,6 +11,7 @@ import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { CalendarPage } from '../pages/calendar/calendar';
 import { SchedulePage } from '../pages/schedule/schedule';
+import { ProfilePage } from '../pages/profile/profile';
 
 
 
@@ -21,7 +22,8 @@ import { SchedulePage } from '../pages/schedule/schedule';
     LoginPage,
     SignupPage,
     CalendarPage,
-    SchedulePage
+    SchedulePage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { SchedulePage } from '../pages/schedule/schedule';
     LoginPage,
     SignupPage,
     CalendarPage,
-    SchedulePage
+    SchedulePage,
+    ProfilePage
   ],
   providers: [
     StatusBar,

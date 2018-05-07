@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <title>Uni9 Oficinas</title>
@@ -9,16 +10,21 @@
 
   <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4e8ef7">
+  <meta name="theme-color" content="#3897f0" />
 
   <!-- add to homescreen for ios -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/icon/icon-192x192.png">
+
+  <noscript>
+    <!-- anchor linking to external file -->
+    Por favor, habilite a execução de javascript no seu browser!
+  </noscript>
   <!-- cordova.js required for cordova apps (remove if not needed) -->
   <script src="cordova.js"></script>
-
-  un-comment this code to enable service worker
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
@@ -32,6 +38,7 @@
   <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
 
 </head>
+
 <body>
 
   <!-- Ionic's root component and where the app will load -->
@@ -47,5 +54,16 @@
   <!-- The main bundle js is generated during the build process -->
   <script src="build/main.js"></script>
 
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: "76f7ab3f-ba4b-44a1-9b34-b4b34e8c3679",
+      });
+    });
+  </script>
+
 </body>
+
 </html>
